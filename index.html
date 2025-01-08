@@ -6,37 +6,54 @@
     <title>7-Day Meal Prep Plan</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f4f4f9;
             margin: 0;
             padding: 20px;
+            color: #444;
         }
         h1, h2, h3 {
             text-align: center;
             color: #333;
+            font-weight: 300;
         }
         .meal-plan {
             background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin: 20px auto;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 30px;
+            border-radius: 12px;
             max-width: 800px;
         }
         .day-plan {
             border: 1px solid #ddd;
-            padding: 15px;
+            padding: 20px;
             margin-bottom: 20px;
-            border-radius: 8px;
-            background-color: #f9f9f9;
+            border-radius: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
+        .day-plan:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .day-plan:nth-child(1) { background-color: #e3f2fd; } /* Day 1 */
+        .day-plan:nth-child(2) { background-color: #fce4ec; } /* Day 2 */
+        .day-plan:nth-child(3) { background-color: #e8f5e9; } /* Day 3 */
+        .day-plan:nth-child(4) { background-color: #fff3e0; } /* Day 4 */
+        .day-plan:nth-child(5) { background-color: #f3e5f5; } /* Day 5 */
+        .day-plan:nth-child(6) { background-color: #e0f7fa; } /* Day 6 */
+        .day-plan:nth-child(7) { background-color: #f9fbe7; } /* Day 7 */
         ul, ol {
             margin: 0;
             padding: 0;
             list-style-type: none;
         }
         li {
-            margin: 5px 0;
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        p {
+            line-height: 1.6;
         }
     </style>
 </head>
